@@ -412,11 +412,12 @@ export default {
 			};
 		}
 
-		return new Response(JSON.stringify(environment), { headers: {
-      "content-type": "application/json;charset=UTF-8",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type"
-    } });
+		return new Response(JSON.stringify(environment), {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': '*',
+        'Access-Control-Allow-Headers': '*',
+      }
+    });
 	}
 };
